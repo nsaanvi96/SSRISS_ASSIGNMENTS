@@ -1,0 +1,74 @@
+[
+  {
+    "title": "AI and Public Policy",
+    "item_url": "https://example.org/events/ai-policy",
+    "date_raw": "10 September 2026",
+    "speaker_raw": "Dr. Ananya Rao",
+    "location_raw": "Auditorium",
+    "raw_text": "AI and Public Policy 10 September 2026 Dr. Ananya Rao Auditorium"
+  },
+  {
+    "title": "Climate Futures Seminar",
+    "item_url": "https://example.org/events/climate-futures",
+    "date_raw": "12 September 2026",
+    "speaker_raw": "Prof. Vikram Nair",
+    "location_raw": "Lecture Hall 2",
+    "raw_text": "Climate Futures Seminar 12 September 2026 Prof. Vikram Nair Lecture Hall 2"
+  },
+  {
+    "title": "Gender and Labor Markets",
+    "item_url": "https://example.org/events/gender-and-labor",
+    "date_raw": "14 September 2026",
+    "speaker_raw": null,
+    "location_raw": "Seminar Room 1",
+    "raw_text": "Gender and Labor Markets 14 September 2026 Seminar Room 1"
+  },
+  {
+    "title": "Data Ethics in Practice",
+    "item_url": "https://external-university.edu/events/data-ethics",
+    "date_raw": "16 September 2026",
+    "speaker_raw": "Dr. Meera Iyer",
+    "location_raw": "Conference Room B",
+    "raw_text": "Data Ethics in Practice 16 September 2026 Dr. Meera Iyer Conference Room B"
+  },
+  {
+    "title": "History of Science Colloquium",
+    "item_url": "https://example.org/events/history-of-science",
+    "date_raw": "18 September 2026",
+    "speaker_raw": "Prof. Arjun Deshpande",
+    "location_raw": "Auditorium",
+    "raw_text": "History of Science Colloquium 18 September 2026 Prof. Arjun Deshpande Auditorium"
+  },
+  {
+    "title": "Urban Planning in South Asia",
+    "item_url": "https://example.org/events/urban-planning",
+    "date_raw": "20 September 2026",
+    "speaker_raw": "Dr. Neha Kapoor",
+    "location_raw": "Lecture Hall 1",
+    "raw_text": "Urban Planning in South Asia 20 September 2026 Dr. Neha Kapoor Lecture Hall 1"
+  },
+  {
+    "title": "Media and Democracy",
+    "item_url": "https://example.org/events/media-and-democracy",
+    "date_raw": "22 September 2026",
+    "speaker_raw": "Prof. Sameer Joshi",
+    "location_raw": "Seminar Room 3",
+    "raw_text": "Media and Democracy 22 September 2026 Prof. Sameer Joshi Seminar Room 3"
+  },
+  {
+    "title": "Introduction to Quantum Computing",
+    "item_url": "https://example.org/events/quantum-computing-intro",
+    "date_raw": "24 September 2026",
+    "speaker_raw": "Dr. Priya Menon",
+    "location_raw": "Physics Block, Room 101",
+    "raw_text": "Introduction to Quantum Computing 24 September 2026 Dr. Priya Menon Physics Block, Room 101"
+  },
+  {
+    "title": "Civil Liberties Panel Discussion",
+    "item_url": "https://example.org/events/civil-liberties-panel",
+    "date_raw": "26 September 2026",
+    "speaker_raw": "Adv. Ritu Bhattacharya",
+    "location_raw": "Main Hall",
+    "raw_text": "Civil Liberties Panel Discussion 26 September 2026 Adv. Ritu Bhattacharya Main Hall"
+  }
+]
