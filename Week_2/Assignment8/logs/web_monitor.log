@@ -1,0 +1,28 @@
+2026-09-25T17:22:17  INFO      scheduler  SCHEDULER starting up (APScheduler 3.10.4)
+2026-09-25T17:22:17  INFO      scheduler  Running fixture source — press Ctrl+C to stop after ~2 runs
+2026-09-25T17:22:21  INFO      scheduler  REGISTERED job=fixture_events interval=30s
+2026-09-25T17:22:21  INFO      scheduler  SCHEDULED RUN starting source=fixture_events
+2026-09-25T17:22:21  INFO      web_monitor  START source=fixture_events
+2026-09-25T17:22:21  INFO      web_monitor  FETCH url=file://fixture_events.html status=200
+2026-09-25T17:22:21  INFO      web_monitor  PARSE records=6 source=fixture_events
+2026-09-25T17:22:21  INFO      web_monitor  NORMALIZE records=6 source=fixture_events
+2026-09-25T17:22:21  INFO      web_monitor  STORE new=6 unchanged=0 updated=0 errors=0 source=fixture_events
+2026-09-25T17:22:21  INFO      web_monitor  END source=fixture_events duration_ms=171 new=6 unchanged=0 updated=0 errors=0
+2026-09-25T17:22:21  INFO      scheduler  JOB OK job_id=fixture_events_immediate new=6 unchanged=0 updated=0 errors=0 duration_ms=171
+2026-09-25T17:22:51  INFO      scheduler  SCHEDULED RUN starting source=fixture_events
+2026-09-25T17:22:51  INFO      web_monitor  START source=fixture_events
+2026-09-25T17:22:51  INFO      web_monitor  FETCH url=file://fixture_events.html status=200
+2026-09-25T17:22:51  INFO      web_monitor  PARSE records=6 source=fixture_events
+2026-09-25T17:22:51  INFO      web_monitor  NORMALIZE records=6 source=fixture_events
+2026-09-25T17:22:51  INFO      web_monitor  STORE new=0 unchanged=6 updated=0 errors=0 source=fixture_events
+2026-09-25T17:22:51  INFO      web_monitor  END source=fixture_events duration_ms=127 new=0 unchanged=6 updated=0 errors=0
+2026-09-25T17:22:51  INFO      scheduler  JOB OK job_id=fixture_events new=0 unchanged=6 updated=0 errors=0 duration_ms=127
+2026-09-25T17:23:21  INFO      scheduler  SCHEDULED RUN starting source=fixture_events
+2026-09-25T17:23:21  INFO      web_monitor  START source=fixture_events
+2026-09-25T17:23:21  INFO      web_monitor  FETCH url=file://fixture_events.html status=200
+2026-09-25T17:23:21  INFO      web_monitor  PARSE records=6 source=fixture_events
+2026-09-25T17:23:21  INFO      web_monitor  NORMALIZE records=6 source=fixture_events
+2026-09-25T17:23:21  INFO      web_monitor  STORE new=0 unchanged=6 updated=0 errors=0 source=fixture_events
+2026-09-25T17:23:21  INFO      web_monitor  END source=fixture_events duration_ms=130 new=0 unchanged=6 updated=0 errors=0
+2026-09-25T17:23:21  INFO      scheduler  JOB OK job_id=fixture_events new=0 unchanged=6 updated=0 errors=0 duration_ms=130
+2026-09-25T17:23:40  INFO      scheduler  SCHEDULER shutting down — goodbye

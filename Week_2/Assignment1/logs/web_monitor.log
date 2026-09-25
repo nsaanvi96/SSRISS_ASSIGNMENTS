@@ -1,0 +1,110 @@
+2026-09-23T22:59:47  INFO      web_monitor.runner  START source=iiserpune_events
+2026-09-23T22:59:47  DEBUG     web_monitor.storage  STORAGE init_db path=C:\Users\Saanvi\Desktop\SAANVI\SSRISS_ASSIGNMENTS\Assignment1\data\iiserpune.db
+2026-09-23T22:59:47  INFO      web_monitor.storage  STORAGE db_ready path=C:\Users\Saanvi\Desktop\SAANVI\SSRISS_ASSIGNMENTS\Assignment1\data\iiserpune.db
+2026-09-23T22:59:47  DEBUG     web_monitor.scraper  FETCH starting url=https://www.iiserpune.ac.in/news?category=events
+2026-09-23T22:59:49  INFO      web_monitor.scraper  FETCH ok url=https://www.iiserpune.ac.in/news?category=events status=200 duration_ms=1713
+2026-09-23T22:59:49  DEBUG     web_monitor.scraper  PARSE starting base_url=https://www.iiserpune.ac.in
+2026-09-23T22:59:49  INFO      web_monitor.scraper  PARSE records=15
+2026-09-23T22:59:49  DEBUG     web_monitor.scraper  NORMALIZE item_url=https://www.iiserpune.ac.in/news/post/bridging-science-and-enterprise-kiran-mazumdar-shaws-visit-to-iiser-pune/1691 event_start=2026-06-15T00:00:00+05:30
+2026-09-23T22:59:49  DEBUG     web_monitor.scraper  NORMALIZE item_url=https://www.iiserpune.ac.in/news/post/thirteenth-convocation-of-iiser-pune/1687 event_start=2026-05-29T00:00:00+05:30
+2026-09-23T22:59:49  DEBUG     web_monitor.scraper  NORMALIZE item_url=https://www.iiserpune.ac.in/news/post/felicitation-of-prof-thomas-pucadyil-and-faculty-get-together/1684 event_start=2026-04-23T00:00:00+05:30
+2026-09-23T22:59:49  DEBUG     web_monitor.scraper  NORMALIZE item_url=https://www.iiserpune.ac.in/news/post/national-conference-on-indian-knowledge-system-science-and-technology-nciksst-2026/1681 event_start=2026-04-16T00:00:00+05:30
+2026-09-23T22:59:49  DEBUG     web_monitor.scraper  NORMALIZE item_url=https://www.iiserpune.ac.in/news/post/foundation-day-celebrations-2026/1680 event_start=2026-03-27T00:00:00+05:30
+2026-09-23T22:59:49  DEBUG     web_monitor.scraper  NORMALIZE item_url=https://www.iiserpune.ac.in/news/post/international-womens-day---2026/1678 event_start=2026-03-19T00:00:00+05:30
+2026-09-23T22:59:49  DEBUG     web_monitor.scraper  NORMALIZE item_url=https://www.iiserpune.ac.in/news/post/inauguration-of-mental-well-being-centre/1674 event_start=2026-01-17T00:00:00+05:30
+2026-09-23T22:59:49  DEBUG     web_monitor.scraper  NORMALIZE item_url=https://www.iiserpune.ac.in/news/post/constitution-day-2025/1662 event_start=2025-11-26T00:00:00+05:30
+2026-09-23T22:59:49  DEBUG     web_monitor.scraper  NORMALIZE item_url=https://www.iiserpune.ac.in/news/post/har-ghar-tiranga-2025/1654 event_start=2025-08-13T00:00:00+05:30
+2026-09-23T22:59:49  DEBUG     web_monitor.scraper  NORMALIZE item_url=https://www.iiserpune.ac.in/news/post/nasha-mukt-bharat-abhiyaan/1653 event_start=2025-08-11T00:00:00+05:30
+2026-09-23T22:59:49  DEBUG     web_monitor.scraper  NORMALIZE item_url=https://www.iiserpune.ac.in/news/post/international-day-of-yoga-2025/1650 event_start=2025-06-24T00:00:00+05:30
+2026-09-23T22:59:49  DEBUG     web_monitor.scraper  NORMALIZE item_url=https://www.iiserpune.ac.in/news/post/twelfth-convocation-of-iiser-pune/1648 event_start=2025-05-30T00:00:00+05:30
+2026-09-23T22:59:49  DEBUG     web_monitor.scraper  NORMALIZE item_url=https://www.iiserpune.ac.in/news/post/iiser-pune-teams-stem-showcase-at-the-2025-bihar-diwas/1641 event_start=2025-03-28T00:00:00+05:30
+2026-09-23T22:59:49  DEBUG     web_monitor.scraper  NORMALIZE item_url=https://www.iiserpune.ac.in/news/post/india-science-fest-2025-stall-on-balloon-physics-bacteria-and-antibiotics/638 event_start=2025-01-24T00:00:00+05:30
+2026-09-23T22:59:49  DEBUG     web_monitor.scraper  NORMALIZE item_url=https://www.iiserpune.ac.in/news/post/inauguration-of-kalpakghar-community-stem-tinkering-centre-at-pimpri-chinchwad-science-park/622 event_start=2024-08-29T00:00:00+05:30
+2026-09-23T22:59:49  INFO      web_monitor.runner  NORMALIZE records=15
+2026-09-23T22:59:49  DEBUG     web_monitor.storage  STORAGE upsert item_url=https://www.iiserpune.ac.in/news/post/bridging-science-and-enterprise-kiran-mazumdar-shaws-visit-to-iiser-pune/1691
+2026-09-23T22:59:49  DEBUG     web_monitor.storage  STORAGE inserted item_url=https://www.iiserpune.ac.in/news/post/bridging-science-and-enterprise-kiran-mazumdar-shaws-visit-to-iiser-pune/1691
+2026-09-23T22:59:49  DEBUG     web_monitor.storage  STORAGE upsert item_url=https://www.iiserpune.ac.in/news/post/thirteenth-convocation-of-iiser-pune/1687
+2026-09-23T22:59:49  DEBUG     web_monitor.storage  STORAGE inserted item_url=https://www.iiserpune.ac.in/news/post/thirteenth-convocation-of-iiser-pune/1687
+2026-09-23T22:59:49  DEBUG     web_monitor.storage  STORAGE upsert item_url=https://www.iiserpune.ac.in/news/post/felicitation-of-prof-thomas-pucadyil-and-faculty-get-together/1684
+2026-09-23T22:59:49  DEBUG     web_monitor.storage  STORAGE inserted item_url=https://www.iiserpune.ac.in/news/post/felicitation-of-prof-thomas-pucadyil-and-faculty-get-together/1684
+2026-09-23T22:59:49  DEBUG     web_monitor.storage  STORAGE upsert item_url=https://www.iiserpune.ac.in/news/post/national-conference-on-indian-knowledge-system-science-and-technology-nciksst-2026/1681
+2026-09-23T22:59:49  DEBUG     web_monitor.storage  STORAGE inserted item_url=https://www.iiserpune.ac.in/news/post/national-conference-on-indian-knowledge-system-science-and-technology-nciksst-2026/1681
+2026-09-23T22:59:49  DEBUG     web_monitor.storage  STORAGE upsert item_url=https://www.iiserpune.ac.in/news/post/foundation-day-celebrations-2026/1680
+2026-09-23T22:59:49  DEBUG     web_monitor.storage  STORAGE inserted item_url=https://www.iiserpune.ac.in/news/post/foundation-day-celebrations-2026/1680
+2026-09-23T22:59:49  DEBUG     web_monitor.storage  STORAGE upsert item_url=https://www.iiserpune.ac.in/news/post/international-womens-day---2026/1678
+2026-09-23T22:59:49  DEBUG     web_monitor.storage  STORAGE inserted item_url=https://www.iiserpune.ac.in/news/post/international-womens-day---2026/1678
+2026-09-23T22:59:49  DEBUG     web_monitor.storage  STORAGE upsert item_url=https://www.iiserpune.ac.in/news/post/inauguration-of-mental-well-being-centre/1674
+2026-09-23T22:59:49  DEBUG     web_monitor.storage  STORAGE inserted item_url=https://www.iiserpune.ac.in/news/post/inauguration-of-mental-well-being-centre/1674
+2026-09-23T22:59:49  DEBUG     web_monitor.storage  STORAGE upsert item_url=https://www.iiserpune.ac.in/news/post/constitution-day-2025/1662
+2026-09-23T22:59:49  DEBUG     web_monitor.storage  STORAGE inserted item_url=https://www.iiserpune.ac.in/news/post/constitution-day-2025/1662
+2026-09-23T22:59:49  DEBUG     web_monitor.storage  STORAGE upsert item_url=https://www.iiserpune.ac.in/news/post/har-ghar-tiranga-2025/1654
+2026-09-23T22:59:49  DEBUG     web_monitor.storage  STORAGE inserted item_url=https://www.iiserpune.ac.in/news/post/har-ghar-tiranga-2025/1654
+2026-09-23T22:59:49  DEBUG     web_monitor.storage  STORAGE upsert item_url=https://www.iiserpune.ac.in/news/post/nasha-mukt-bharat-abhiyaan/1653
+2026-09-23T22:59:49  DEBUG     web_monitor.storage  STORAGE inserted item_url=https://www.iiserpune.ac.in/news/post/nasha-mukt-bharat-abhiyaan/1653
+2026-09-23T22:59:49  DEBUG     web_monitor.storage  STORAGE upsert item_url=https://www.iiserpune.ac.in/news/post/international-day-of-yoga-2025/1650
+2026-09-23T22:59:49  DEBUG     web_monitor.storage  STORAGE inserted item_url=https://www.iiserpune.ac.in/news/post/international-day-of-yoga-2025/1650
+2026-09-23T22:59:49  DEBUG     web_monitor.storage  STORAGE upsert item_url=https://www.iiserpune.ac.in/news/post/twelfth-convocation-of-iiser-pune/1648
+2026-09-23T22:59:49  DEBUG     web_monitor.storage  STORAGE inserted item_url=https://www.iiserpune.ac.in/news/post/twelfth-convocation-of-iiser-pune/1648
+2026-09-23T22:59:49  DEBUG     web_monitor.storage  STORAGE upsert item_url=https://www.iiserpune.ac.in/news/post/iiser-pune-teams-stem-showcase-at-the-2025-bihar-diwas/1641
+2026-09-23T22:59:49  DEBUG     web_monitor.storage  STORAGE inserted item_url=https://www.iiserpune.ac.in/news/post/iiser-pune-teams-stem-showcase-at-the-2025-bihar-diwas/1641
+2026-09-23T22:59:49  DEBUG     web_monitor.storage  STORAGE upsert item_url=https://www.iiserpune.ac.in/news/post/india-science-fest-2025-stall-on-balloon-physics-bacteria-and-antibiotics/638
+2026-09-23T22:59:49  DEBUG     web_monitor.storage  STORAGE inserted item_url=https://www.iiserpune.ac.in/news/post/india-science-fest-2025-stall-on-balloon-physics-bacteria-and-antibiotics/638
+2026-09-23T22:59:49  DEBUG     web_monitor.storage  STORAGE upsert item_url=https://www.iiserpune.ac.in/news/post/inauguration-of-kalpakghar-community-stem-tinkering-centre-at-pimpri-chinchwad-science-park/622
+2026-09-23T22:59:49  DEBUG     web_monitor.storage  STORAGE inserted item_url=https://www.iiserpune.ac.in/news/post/inauguration-of-kalpakghar-community-stem-tinkering-centre-at-pimpri-chinchwad-science-park/622
+2026-09-23T22:59:49  INFO      web_monitor.runner  STORE new=15 existing=0 changed=0
+2026-09-23T22:59:49  INFO      web_monitor.runner  END source=iiserpune_events duration_ms=1883
+2026-09-25T18:02:30  INFO      web_monitor.runner  START source=iiserpune_events
+2026-09-25T18:02:30  DEBUG     web_monitor.storage  STORAGE init_db path=C:\Users\Saanvi\Desktop\SAANVI\SSRISS_ASSIGNMENTS\Assignment1\data\iiserpune.db
+2026-09-25T18:02:30  INFO      web_monitor.storage  STORAGE db_ready path=C:\Users\Saanvi\Desktop\SAANVI\SSRISS_ASSIGNMENTS\Assignment1\data\iiserpune.db
+2026-09-25T18:02:30  DEBUG     web_monitor.scraper  FETCH starting url=https://www.iiserpune.ac.in/news?category=events
+2026-09-25T18:02:31  INFO      web_monitor.scraper  FETCH ok url=https://www.iiserpune.ac.in/news?category=events status=200 duration_ms=1769
+2026-09-25T18:02:31  DEBUG     web_monitor.scraper  PARSE starting base_url=https://www.iiserpune.ac.in
+2026-09-25T18:02:31  INFO      web_monitor.scraper  PARSE records=15
+2026-09-25T18:02:31  DEBUG     web_monitor.scraper  NORMALIZE item_url=https://www.iiserpune.ac.in/news/post/bridging-science-and-enterprise-kiran-mazumdar-shaws-visit-to-iiser-pune/1691 event_start=2026-06-15T00:00:00+05:30
+2026-09-25T18:02:31  DEBUG     web_monitor.scraper  NORMALIZE item_url=https://www.iiserpune.ac.in/news/post/thirteenth-convocation-of-iiser-pune/1687 event_start=2026-05-29T00:00:00+05:30
+2026-09-25T18:02:31  DEBUG     web_monitor.scraper  NORMALIZE item_url=https://www.iiserpune.ac.in/news/post/felicitation-of-prof-thomas-pucadyil-and-faculty-get-together/1684 event_start=2026-04-23T00:00:00+05:30
+2026-09-25T18:02:31  DEBUG     web_monitor.scraper  NORMALIZE item_url=https://www.iiserpune.ac.in/news/post/national-conference-on-indian-knowledge-system-science-and-technology-nciksst-2026/1681 event_start=2026-04-16T00:00:00+05:30
+2026-09-25T18:02:31  DEBUG     web_monitor.scraper  NORMALIZE item_url=https://www.iiserpune.ac.in/news/post/foundation-day-celebrations-2026/1680 event_start=2026-03-27T00:00:00+05:30
+2026-09-25T18:02:31  DEBUG     web_monitor.scraper  NORMALIZE item_url=https://www.iiserpune.ac.in/news/post/international-womens-day---2026/1678 event_start=2026-03-19T00:00:00+05:30
+2026-09-25T18:02:31  DEBUG     web_monitor.scraper  NORMALIZE item_url=https://www.iiserpune.ac.in/news/post/inauguration-of-mental-well-being-centre/1674 event_start=2026-01-17T00:00:00+05:30
+2026-09-25T18:02:31  DEBUG     web_monitor.scraper  NORMALIZE item_url=https://www.iiserpune.ac.in/news/post/constitution-day-2025/1662 event_start=2025-11-26T00:00:00+05:30
+2026-09-25T18:02:31  DEBUG     web_monitor.scraper  NORMALIZE item_url=https://www.iiserpune.ac.in/news/post/har-ghar-tiranga-2025/1654 event_start=2025-08-13T00:00:00+05:30
+2026-09-25T18:02:31  DEBUG     web_monitor.scraper  NORMALIZE item_url=https://www.iiserpune.ac.in/news/post/nasha-mukt-bharat-abhiyaan/1653 event_start=2025-08-11T00:00:00+05:30
+2026-09-25T18:02:31  DEBUG     web_monitor.scraper  NORMALIZE item_url=https://www.iiserpune.ac.in/news/post/international-day-of-yoga-2025/1650 event_start=2025-06-24T00:00:00+05:30
+2026-09-25T18:02:31  DEBUG     web_monitor.scraper  NORMALIZE item_url=https://www.iiserpune.ac.in/news/post/twelfth-convocation-of-iiser-pune/1648 event_start=2025-05-30T00:00:00+05:30
+2026-09-25T18:02:31  DEBUG     web_monitor.scraper  NORMALIZE item_url=https://www.iiserpune.ac.in/news/post/iiser-pune-teams-stem-showcase-at-the-2025-bihar-diwas/1641 event_start=2025-03-28T00:00:00+05:30
+2026-09-25T18:02:31  DEBUG     web_monitor.scraper  NORMALIZE item_url=https://www.iiserpune.ac.in/news/post/india-science-fest-2025-stall-on-balloon-physics-bacteria-and-antibiotics/638 event_start=2025-01-24T00:00:00+05:30
+2026-09-25T18:02:31  DEBUG     web_monitor.scraper  NORMALIZE item_url=https://www.iiserpune.ac.in/news/post/inauguration-of-kalpakghar-community-stem-tinkering-centre-at-pimpri-chinchwad-science-park/622 event_start=2024-08-29T00:00:00+05:30
+2026-09-25T18:02:31  INFO      web_monitor.runner  NORMALIZE records=15
+2026-09-25T18:02:31  DEBUG     web_monitor.storage  STORAGE upsert item_url=https://www.iiserpune.ac.in/news/post/bridging-science-and-enterprise-kiran-mazumdar-shaws-visit-to-iiser-pune/1691
+2026-09-25T18:02:31  DEBUG     web_monitor.storage  STORAGE unchanged item_url=https://www.iiserpune.ac.in/news/post/bridging-science-and-enterprise-kiran-mazumdar-shaws-visit-to-iiser-pune/1691
+2026-09-25T18:02:31  DEBUG     web_monitor.storage  STORAGE upsert item_url=https://www.iiserpune.ac.in/news/post/thirteenth-convocation-of-iiser-pune/1687
+2026-09-25T18:02:31  DEBUG     web_monitor.storage  STORAGE unchanged item_url=https://www.iiserpune.ac.in/news/post/thirteenth-convocation-of-iiser-pune/1687
+2026-09-25T18:02:31  DEBUG     web_monitor.storage  STORAGE upsert item_url=https://www.iiserpune.ac.in/news/post/felicitation-of-prof-thomas-pucadyil-and-faculty-get-together/1684
+2026-09-25T18:02:31  DEBUG     web_monitor.storage  STORAGE unchanged item_url=https://www.iiserpune.ac.in/news/post/felicitation-of-prof-thomas-pucadyil-and-faculty-get-together/1684
+2026-09-25T18:02:31  DEBUG     web_monitor.storage  STORAGE upsert item_url=https://www.iiserpune.ac.in/news/post/national-conference-on-indian-knowledge-system-science-and-technology-nciksst-2026/1681
+2026-09-25T18:02:31  DEBUG     web_monitor.storage  STORAGE unchanged item_url=https://www.iiserpune.ac.in/news/post/national-conference-on-indian-knowledge-system-science-and-technology-nciksst-2026/1681
+2026-09-25T18:02:31  DEBUG     web_monitor.storage  STORAGE upsert item_url=https://www.iiserpune.ac.in/news/post/foundation-day-celebrations-2026/1680
+2026-09-25T18:02:31  DEBUG     web_monitor.storage  STORAGE unchanged item_url=https://www.iiserpune.ac.in/news/post/foundation-day-celebrations-2026/1680
+2026-09-25T18:02:31  DEBUG     web_monitor.storage  STORAGE upsert item_url=https://www.iiserpune.ac.in/news/post/international-womens-day---2026/1678
+2026-09-25T18:02:31  DEBUG     web_monitor.storage  STORAGE unchanged item_url=https://www.iiserpune.ac.in/news/post/international-womens-day---2026/1678
+2026-09-25T18:02:31  DEBUG     web_monitor.storage  STORAGE upsert item_url=https://www.iiserpune.ac.in/news/post/inauguration-of-mental-well-being-centre/1674
+2026-09-25T18:02:31  DEBUG     web_monitor.storage  STORAGE unchanged item_url=https://www.iiserpune.ac.in/news/post/inauguration-of-mental-well-being-centre/1674
+2026-09-25T18:02:31  DEBUG     web_monitor.storage  STORAGE upsert item_url=https://www.iiserpune.ac.in/news/post/constitution-day-2025/1662
+2026-09-25T18:02:31  DEBUG     web_monitor.storage  STORAGE unchanged item_url=https://www.iiserpune.ac.in/news/post/constitution-day-2025/1662
+2026-09-25T18:02:31  DEBUG     web_monitor.storage  STORAGE upsert item_url=https://www.iiserpune.ac.in/news/post/har-ghar-tiranga-2025/1654
+2026-09-25T18:02:31  DEBUG     web_monitor.storage  STORAGE unchanged item_url=https://www.iiserpune.ac.in/news/post/har-ghar-tiranga-2025/1654
+2026-09-25T18:02:31  DEBUG     web_monitor.storage  STORAGE upsert item_url=https://www.iiserpune.ac.in/news/post/nasha-mukt-bharat-abhiyaan/1653
+2026-09-25T18:02:31  DEBUG     web_monitor.storage  STORAGE unchanged item_url=https://www.iiserpune.ac.in/news/post/nasha-mukt-bharat-abhiyaan/1653
+2026-09-25T18:02:31  DEBUG     web_monitor.storage  STORAGE upsert item_url=https://www.iiserpune.ac.in/news/post/international-day-of-yoga-2025/1650
+2026-09-25T18:02:31  DEBUG     web_monitor.storage  STORAGE unchanged item_url=https://www.iiserpune.ac.in/news/post/international-day-of-yoga-2025/1650
+2026-09-25T18:02:31  DEBUG     web_monitor.storage  STORAGE upsert item_url=https://www.iiserpune.ac.in/news/post/twelfth-convocation-of-iiser-pune/1648
+2026-09-25T18:02:31  DEBUG     web_monitor.storage  STORAGE unchanged item_url=https://www.iiserpune.ac.in/news/post/twelfth-convocation-of-iiser-pune/1648
+2026-09-25T18:02:31  DEBUG     web_monitor.storage  STORAGE upsert item_url=https://www.iiserpune.ac.in/news/post/iiser-pune-teams-stem-showcase-at-the-2025-bihar-diwas/1641
+2026-09-25T18:02:31  DEBUG     web_monitor.storage  STORAGE unchanged item_url=https://www.iiserpune.ac.in/news/post/iiser-pune-teams-stem-showcase-at-the-2025-bihar-diwas/1641
+2026-09-25T18:02:31  DEBUG     web_monitor.storage  STORAGE upsert item_url=https://www.iiserpune.ac.in/news/post/india-science-fest-2025-stall-on-balloon-physics-bacteria-and-antibiotics/638
+2026-09-25T18:02:31  DEBUG     web_monitor.storage  STORAGE unchanged item_url=https://www.iiserpune.ac.in/news/post/india-science-fest-2025-stall-on-balloon-physics-bacteria-and-antibiotics/638
+2026-09-25T18:02:31  DEBUG     web_monitor.storage  STORAGE upsert item_url=https://www.iiserpune.ac.in/news/post/inauguration-of-kalpakghar-community-stem-tinkering-centre-at-pimpri-chinchwad-science-park/622
+2026-09-25T18:02:32  DEBUG     web_monitor.storage  STORAGE unchanged item_url=https://www.iiserpune.ac.in/news/post/inauguration-of-kalpakghar-community-stem-tinkering-centre-at-pimpri-chinchwad-science-park/622
+2026-09-25T18:02:32  INFO      web_monitor.runner  STORE new=0 existing=15 changed=0
+2026-09-25T18:02:32  INFO      web_monitor.runner  END source=iiserpune_events duration_ms=2057

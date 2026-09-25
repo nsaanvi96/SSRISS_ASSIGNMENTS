@@ -1,0 +1,12 @@
+2026-09-24T09:57:53  INFO      web_monitor  START source=iiserpune_events
+2026-09-24T09:57:55  INFO      web_monitor  FETCH url=https://www.iiserpune.ac.in/news?category=events status=200
+2026-09-24T09:57:55  INFO      web_monitor  PARSE records=15 source=iiserpune_events
+2026-09-24T09:57:55  INFO      web_monitor  NORMALIZE records=15 source=iiserpune_events
+2026-09-24T09:57:55  INFO      web_monitor  STORE new=15 unchanged=0 updated=0 errors=0 source=iiserpune_events
+2026-09-24T09:57:55  INFO      web_monitor  END source=iiserpune_events duration_ms=2820 new=15 unchanged=0 updated=0 errors=0
+2026-09-24T09:58:03  INFO      web_monitor  START source=iiserpune_events
+2026-09-24T09:58:05  INFO      web_monitor  FETCH url=https://www.iiserpune.ac.in/news?category=events status=200
+2026-09-24T09:58:05  INFO      web_monitor  PARSE records=15 source=iiserpune_events
+2026-09-24T09:58:05  INFO      web_monitor  NORMALIZE records=15 source=iiserpune_events
+2026-09-24T09:58:05  INFO      web_monitor  STORE new=0 unchanged=15 updated=0 errors=0 source=iiserpune_events
+2026-09-24T09:58:05  INFO      web_monitor  END source=iiserpune_events duration_ms=1702 new=0 unchanged=15 updated=0 errors=0

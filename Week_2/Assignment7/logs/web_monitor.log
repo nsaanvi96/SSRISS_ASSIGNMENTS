@@ -1,0 +1,21 @@
+2026-09-25T17:01:32  INFO      web_monitor  START source=iiserpune_events
+2026-09-25T17:01:34  INFO      web_monitor  FETCH url=https://www.iiserpune.ac.in/news?category=events status=200
+2026-09-25T17:01:34  INFO      web_monitor  PARSE records=15 source=iiserpune_events
+2026-09-25T17:01:35  INFO      web_monitor  DETAIL ok source=iiserpune_events item=https://www.iiserpune.ac.in/news/post/bridging-science-and-enterprise-kiran-mazumdar-shaws-visit-to-iiser-pune/1691
+2026-09-25T17:01:36  INFO      web_monitor  DETAIL ok source=iiserpune_events item=https://www.iiserpune.ac.in/news/post/thirteenth-convocation-of-iiser-pune/1687
+2026-09-25T17:01:37  INFO      web_monitor  DETAIL ok source=iiserpune_events item=https://www.iiserpune.ac.in/news/post/felicitation-of-prof-thomas-pucadyil-and-faculty-get-together/1684
+2026-09-25T17:01:38  INFO      web_monitor  DETAIL ok source=iiserpune_events item=https://www.iiserpune.ac.in/news/post/national-conference-on-indian-knowledge-system-science-and-technology-nciksst-2026/1681
+2026-09-25T17:01:40  INFO      web_monitor  DETAIL ok source=iiserpune_events item=https://www.iiserpune.ac.in/news/post/foundation-day-celebrations-2026/1680
+2026-09-25T17:01:41  INFO      web_monitor  DETAIL ok source=iiserpune_events item=https://www.iiserpune.ac.in/news/post/international-womens-day---2026/1678
+2026-09-25T17:01:42  INFO      web_monitor  DETAIL ok source=iiserpune_events item=https://www.iiserpune.ac.in/news/post/inauguration-of-mental-well-being-centre/1674
+2026-09-25T17:01:44  INFO      web_monitor  DETAIL ok source=iiserpune_events item=https://www.iiserpune.ac.in/news/post/constitution-day-2025/1662
+2026-09-25T17:01:46  INFO      web_monitor  DETAIL ok source=iiserpune_events item=https://www.iiserpune.ac.in/news/post/har-ghar-tiranga-2025/1654
+2026-09-25T17:01:47  INFO      web_monitor  DETAIL ok source=iiserpune_events item=https://www.iiserpune.ac.in/news/post/nasha-mukt-bharat-abhiyaan/1653
+2026-09-25T17:01:49  INFO      web_monitor  DETAIL ok source=iiserpune_events item=https://www.iiserpune.ac.in/news/post/international-day-of-yoga-2025/1650
+2026-09-25T17:01:50  INFO      web_monitor  DETAIL ok source=iiserpune_events item=https://www.iiserpune.ac.in/news/post/twelfth-convocation-of-iiser-pune/1648
+2026-09-25T17:01:51  INFO      web_monitor  DETAIL ok source=iiserpune_events item=https://www.iiserpune.ac.in/news/post/iiser-pune-teams-stem-showcase-at-the-2025-bihar-diwas/1641
+2026-09-25T17:01:52  INFO      web_monitor  DETAIL ok source=iiserpune_events item=https://www.iiserpune.ac.in/news/post/india-science-fest-2025-stall-on-balloon-physics-bacteria-and-antibiotics/638
+2026-09-25T17:01:52  INFO      web_monitor  DETAIL ok source=iiserpune_events item=https://www.iiserpune.ac.in/news/post/inauguration-of-kalpakghar-community-stem-tinkering-centre-at-pimpri-chinchwad-science-park/622
+2026-09-25T17:01:52  INFO      web_monitor  NORMALIZE records=15 source=iiserpune_events
+2026-09-25T17:01:53  INFO      web_monitor  STORE new=15 unchanged=0 updated=0 errors=0 source=iiserpune_events
+2026-09-25T17:01:53  INFO      web_monitor  END source=iiserpune_events duration_ms=20799 new=15 unchanged=0 updated=0 errors=0
