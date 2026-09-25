@@ -1,4 +1,4 @@
-import sqlite3
+utf-8import sqlite3
 import sys
 from pathlib import Path
 from datetime import datetime, timezone
@@ -34,7 +34,7 @@ SCHEMA_KEYS = {
 }
 
 
-# ── normal_page.html ──────────────────────────────────────────────────────────
+
 
 def test_parse_expected_number_of_items():
     items = parse_items(load("normal_page.html"), BASE_URL)
@@ -64,7 +64,7 @@ def test_normalization_shape():
         assert SCHEMA_KEYS == set(normalized.keys()), f"Schema mismatch for {item['item_url']}"
 
 
-# ── missing_optional_field.html ───────────────────────────────────────────────
+
 
 def test_missing_date_returns_none():
     items = parse_items(load("missing_optional_field.html"), BASE_URL)
@@ -96,14 +96,14 @@ def test_all_records_returned_despite_missing_fields():
     assert len(items) == 5
 
 
-# ── empty_listing.html ────────────────────────────────────────────────────────
+
 
 def test_empty_listing_returns_empty_list():
     items = parse_items(load("empty_listing.html"), BASE_URL)
     assert items == []
 
 
-# ── changed_card_structure.html ───────────────────────────────────────────────
+
 
 def test_changed_structure_record_count():
     items = parse_items(load("changed_card_structure.html"), BASE_URL)
@@ -116,7 +116,7 @@ def test_extra_class_on_li_still_parsed():
     assert items[0]["item_url"] is not None
 
 
-# ── storage deduplication ─────────────────────────────────────────────────────
+
 
 def test_duplicate_item_creates_one_row(tmp_path):
     db = tmp_path / "test.db"

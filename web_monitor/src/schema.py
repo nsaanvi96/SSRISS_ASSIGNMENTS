@@ -1,4 +1,4 @@
-"""
+utf-8"""
 schema.py — shared output schema for all sources.
 
 Every source normalizer must return a dict that matches ITEM_SCHEMA.
@@ -7,22 +7,22 @@ Call validate_item() before upsert to catch missing required fields early.
 
 from datetime import datetime, timezone
 
-# The canonical shape every normalized item must conform to.
-# None = optional. [] = empty list is fine.
+
+
 ITEM_SCHEMA = {
-    "source_name":    str,   # required — e.g. "iiserpune_events"
-    "source_url":     str,   # required — the listing page URL
-    "item_url":       str,   # required — canonical URL for this item
-    "item_type":      str,   # required — "event" | "faculty" | "announcement"
-    "title":          str,   # required
-    "event_start":    None,  # ISO-8601 string or None
-    "event_end":      None,  # ISO-8601 string or None
-    "location":       None,  # str or None
-    "speakers":       list,  # list of str (may be empty)
-    "organizations":  list,  # list of str (may be empty)
-    "raw_text":       None,  # str or None
-    "fetched_at":     str,   # required — ISO-8601 UTC timestamp
-    "http_status":    int,   # required — e.g. 200
+    "source_name":    str,   
+    "source_url":     str,   
+    "item_url":       str,   
+    "item_type":      str,   
+    "title":          str,   
+    "event_start":    None,  
+    "event_end":      None,  
+    "location":       None,  
+    "speakers":       list,  
+    "organizations":  list,  
+    "raw_text":       None,  
+    "fetched_at":     str,   
+    "http_status":    int,   
 }
 
 REQUIRED_FIELDS = {"source_name", "source_url", "item_url", "item_type", "title", "fetched_at", "http_status"}

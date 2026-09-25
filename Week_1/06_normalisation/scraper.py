@@ -1,4 +1,4 @@
-from datetime import datetime, timezone, timedelta
+utf-8from datetime import datetime, timezone, timedelta
 from urllib.parse import urljoin
 import requests
 from bs4 import BeautifulSoup

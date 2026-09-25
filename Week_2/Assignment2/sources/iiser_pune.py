@@ -1,4 +1,4 @@
-"""
+utf-8"""
 sources/iiser_pune.py — IISER Pune events source adapter.
 
 Exposes:
@@ -12,7 +12,7 @@ from urllib.parse import urljoin
 
 from bs4 import BeautifulSoup
 
-# ── Constants ─────────────────────────────────────────────────────────────────
+
 
 BASE_URL = "https://www.iiserpune.ac.in"
 LISTING_URL = f"{BASE_URL}/news?category=events"
@@ -20,7 +20,7 @@ SOURCE_NAME = "iiserpune_events"
 IST = timezone(timedelta(hours=5, minutes=30))
 
 
-# ── Parser ────────────────────────────────────────────────────────────────────
+
 
 def parse_items(html: str, base_url: str) -> list[dict]:
     """
@@ -48,15 +48,15 @@ def parse_items(html: str, base_url: str) -> list[dict]:
             "title":        title,
             "item_url":     item_url,
             "date_raw":     date_raw,
-            "speaker_raw":  None,   # not available on listing page
-            "location_raw": None,   # not available on listing page
+            "speaker_raw":  None,   
+            "location_raw": None,   
             "raw_text":     raw_text,
         })
 
     return items
 
 
-# ── Normalizer ────────────────────────────────────────────────────────────────
+
 
 def _parse_date(date_raw: str | None) -> str | None:
     """
@@ -104,9 +104,9 @@ def normalize_item(raw_item: dict, fetched_at: str, http_status: int) -> dict:
     }
 
 
-# ── Source config ─────────────────────────────────────────────────────────────
-# This dict is what runner.py consumes — everything the runner needs
-# to collect from this source is declared here.
+
+
+
 
 SOURCE = {
     "name":        SOURCE_NAME,
@@ -115,5 +115,5 @@ SOURCE = {
     "item_type":   "event",
     "parser":      parse_items,
     "normalizer":  normalize_item,
-    # "max_items": 10,  # uncomment to cap records during development
+    
 }

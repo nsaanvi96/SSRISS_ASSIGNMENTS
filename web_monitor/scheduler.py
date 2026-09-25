@@ -1,4 +1,4 @@
-"""
+utf-8"""
 assignments/08_scheduling/scheduler.py
 Assignment 8 — Scheduled Local Run
 
@@ -16,7 +16,6 @@ Design decisions:
 
 APScheduler version pinned: 3.10.4
 """
-
 import sys
 import time
 from pathlib import Path
@@ -24,24 +23,20 @@ from pathlib import Path
 from apscheduler.schedulers.blocking import BlockingScheduler
 from apscheduler.events import EVENT_JOB_ERROR, EVENT_JOB_EXECUTED
 
-# ── Path setup ────────────────────────────────────────────────────────────────
-# Allow imports from src/ and sources/ regardless of where this script
-# is invoked from.
 ROOT = Path(__file__).resolve().parent.parent.parent
 sys.path.insert(0, str(ROOT / "src"))
 sys.path.insert(0, str(ROOT / "sources"))
 sys.path.insert(0, str(ROOT / "assignments" / "08_scheduling"))
 
-from runner import run_source          # noqa: E402 — after path setup
-from logging_config import get_logger  # noqa: E402
-from fixture_source import SOURCE as FIXTURE_SOURCE  # noqa: E402
+from runner import run_source          
+from logging_config import get_logger  
+from fixture_source import SOURCE as FIXTURE_SOURCE  
 
-# Uncomment to also schedule the real IISER Pune source.
-# from iiser_pune import SOURCE as IISER_SOURCE
+
 
 logger = get_logger("scheduler")
 
-# ── Event listener ────────────────────────────────────────────────────────────
+
 
 def _on_job_event(event):
     """
@@ -67,7 +62,7 @@ def _on_job_event(event):
         )
 
 
-# ── Job wrapper ───────────────────────────────────────────────────────────────
+
 
 def _run_with_logging(source_config: dict):
     """
@@ -78,7 +73,7 @@ def _run_with_logging(source_config: dict):
     return run_source(source_config)
 
 
-# ── Main ──────────────────────────────────────────────────────────────────────
+
 
 def build_scheduler() -> BlockingScheduler:
     """
@@ -88,7 +83,7 @@ def build_scheduler() -> BlockingScheduler:
     scheduler = BlockingScheduler(timezone="Asia/Kolkata")
     scheduler.add_listener(_on_job_event, EVENT_JOB_EXECUTED | EVENT_JOB_ERROR)
 
-    # ── Fixture source — runs every 30 seconds (demo cadence) ─────────────────
+    
     scheduler.add_job(
         func=_run_with_logging,
         args=[FIXTURE_SOURCE],
@@ -96,27 +91,27 @@ def build_scheduler() -> BlockingScheduler:
         seconds=30,
         id="fixture_events",
         name="Fixture Events (local demo)",
-        max_instances=1,   # <-- prevents overlapping runs
+        max_instances=1,   
         misfire_grace_time=10,
         replace_existing=True,
     )
     logger.info("REGISTERED job=fixture_events interval=30s")
 
-    # ── Real IISER Pune source — runs every 6 hours ────────────────────────────
-    # Uncomment when live crawling is appropriate.
-    #
-    # scheduler.add_job(
-    #     func=_run_with_logging,
-    #     args=[IISER_SOURCE],
-    #     trigger="interval",
-    #     hours=6,
-    #     id="iiserpune_events",
-    #     name="IISER Pune Events",
-    #     max_instances=1,
-    #     misfire_grace_time=120,
-    #     replace_existing=True,
-    # )
-    # logger.info("REGISTERED job=iiserpune_events interval=6h")
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
     return scheduler
 
@@ -127,8 +122,8 @@ if __name__ == "__main__":
 
     scheduler = build_scheduler()
 
-    # Fire the fixture job once immediately so results appear without waiting
-    # the first full interval.
+    
+    
     scheduler.add_job(
         func=_run_with_logging,
         args=[FIXTURE_SOURCE],

@@ -1,13 +1,13 @@
-import hashlib
+utf-8import hashlib
 import json
 import sqlite3
 from datetime import datetime, timezone
 from pathlib import Path
 
-# Default DB location — can be overridden per call
+
 DB_PATH = Path(__file__).parent.parent / "data" / "monitor.db"
 
-# Fields that define whether an item's *content* has changed
+
 HASH_FIELDS = [
     "title",
     "event_start",

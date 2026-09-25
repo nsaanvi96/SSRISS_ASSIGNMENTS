@@ -1,4 +1,4 @@
-import logging
+utf-8import logging
 import sys
 from pathlib import Path
 
@@ -12,7 +12,7 @@ def get_logger(name: str = "web_monitor") -> logging.Logger:
     """
     logger = logging.getLogger(name)
 
-    # Avoid adding duplicate handlers if this function is called more than once
+    
     if logger.handlers:
         return logger
 
@@ -23,12 +23,12 @@ def get_logger(name: str = "web_monitor") -> logging.Logger:
         datefmt="%Y-%m-%dT%H:%M:%S",
     )
 
-    # Console handler — INFO and above
+    
     console_handler = logging.StreamHandler(sys.stdout)
     console_handler.setLevel(logging.INFO)
     console_handler.setFormatter(formatter)
 
-    # File handler — DEBUG and above (captures everything)
+    
     LOG_DIR.mkdir(parents=True, exist_ok=True)
     file_handler = logging.FileHandler(LOG_DIR / "web_monitor.log", encoding="utf-8")
     file_handler.setLevel(logging.DEBUG)

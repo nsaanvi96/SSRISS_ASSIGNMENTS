@@ -1,4 +1,4 @@
-"""
+utf-8"""
 assignments/08_scheduling/fixture_source.py
 Local fixture source for Assignment 8.
 
@@ -18,10 +18,10 @@ sys.path.insert(0, str(ROOT / "sources"))
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin
 
-# Reuse IISER Pune's normalizer — proves the runner is source-agnostic.
+
 from iiser_pune import normalize_item
 
-# ── Fixture HTML path ─────────────────────────────────────────────────────────
+
 
 _FIXTURE_PATH = Path(__file__).parent / "fixture_events.html"
 
@@ -30,7 +30,7 @@ FIXTURE_BASE_URL    = "https://fixture.example.org"
 FIXTURE_SOURCE_NAME = "fixture_events"
 
 
-# ── Parser ────────────────────────────────────────────────────────────────────
+
 
 def parse_fixture_items(html: str, base_url: str) -> list[dict]:
     """
@@ -66,7 +66,7 @@ def parse_fixture_items(html: str, base_url: str) -> list[dict]:
     return items
 
 
-# ── Fetch from disk ───────────────────────────────────────────────────────────
+
 
 def fetch_fixture(url: str) -> tuple[str, int]:
     """
@@ -77,9 +77,9 @@ def fetch_fixture(url: str) -> tuple[str, int]:
     return html, 200
 
 
-# ── Source config ─────────────────────────────────────────────────────────────
-# runner.py normally calls src/fetch.py; we override "fetcher" here so the
-# runner uses our disk reader instead — no network involved.
+
+
+
 
 SOURCE = {
     "name":        FIXTURE_SOURCE_NAME,
@@ -88,5 +88,5 @@ SOURCE = {
     "item_type":   "event",
     "parser":      parse_fixture_items,
     "normalizer":  normalize_item,
-    "fetcher":     fetch_fixture,   # optional key — runner checks for this
+    "fetcher":     fetch_fixture,   
 }

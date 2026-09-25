@@ -1,4 +1,4 @@
-"""
+utf-8"""
 run.py — Main runner for the IISER Pune events scraper.
 
 Usage:
@@ -25,14 +25,14 @@ def run(use_fixture: bool = False) -> None:
     source = "iiserpune_events"
     logger.info("START source=%s", source)
 
-    # --- Init DB ---
+    
     try:
         init_db(DB_PATH)
     except Exception as e:
         logger.error("STAGE=init_db source=%s error=%s", source, e)
         sys.exit(1)
 
-    # --- Fetch ---
+    
     fetched_at = datetime.now(timezone.utc).isoformat()
     try:
         if use_fixture:
@@ -45,14 +45,14 @@ def run(use_fixture: bool = False) -> None:
         logger.error("STAGE=fetch source=%s error=%s", source, e)
         sys.exit(1)
 
-    # --- Parse ---
+    
     try:
         raw_items = parse_items(html, BASE_URL)
     except Exception as e:
         logger.error("STAGE=parse source=%s error=%s", source, e)
         sys.exit(1)
 
-    # --- Normalize ---
+    
     normalized = []
     for raw in raw_items:
         try:
@@ -61,7 +61,7 @@ def run(use_fixture: bool = False) -> None:
             logger.warning("NORMALIZE skipped item_url=%s error=%s", raw.get("item_url"), e)
     logger.info("NORMALIZE records=%d", len(normalized))
 
-    # --- Store ---
+    
     counts = {"new": 0, "unchanged": 0, "updated": 0}
     for item in normalized:
         try:

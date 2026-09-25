@@ -1,4 +1,4 @@
-import logging
+utf-8import logging
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from urllib.parse import urljoin
@@ -6,9 +6,9 @@ from urllib.parse import urljoin
 import requests
 from bs4 import BeautifulSoup
 
-# ---------------------------------------------------------------------------
-# Constants
-# ---------------------------------------------------------------------------
+
+
+
 
 BASE_URL = "https://www.iiserpune.ac.in"
 TARGET_URL = f"{BASE_URL}/news?category=events"
@@ -21,9 +21,9 @@ IST = timezone(timedelta(hours=5, minutes=30))
 
 log = logging.getLogger(__name__)
 
-# ---------------------------------------------------------------------------
-# Fetch
-# ---------------------------------------------------------------------------
+
+
+
 
 def fetch(url: str) -> str:
     headers = {"User-Agent": USER_AGENT}
@@ -39,9 +39,9 @@ def fetch(url: str) -> str:
     return response.text
 
 
-# ---------------------------------------------------------------------------
-# Parse listing page  (/news?category=events)
-# ---------------------------------------------------------------------------
+
+
+
 
 def parse_items(html: str, base_url: str) -> list[dict]:
     soup = BeautifulSoup(html, "lxml")
@@ -72,9 +72,9 @@ def parse_items(html: str, base_url: str) -> list[dict]:
     return items
 
 
-# ---------------------------------------------------------------------------
-# Parse detail page  (/news/post/...)
-# ---------------------------------------------------------------------------
+
+
+
 
 def parse_detail(html: str, item_url: str) -> dict:
     """
@@ -108,9 +108,9 @@ def parse_detail(html: str, item_url: str) -> dict:
     }
 
 
-# ---------------------------------------------------------------------------
-# Merge listing + detail
-# ---------------------------------------------------------------------------
+
+
+
 
 def merge_listing_and_detail(listing_item: dict, detail_item: dict) -> dict:
     """
@@ -125,9 +125,9 @@ def merge_listing_and_detail(listing_item: dict, detail_item: dict) -> dict:
     return merged
 
 
-# ---------------------------------------------------------------------------
-# Normalization
-# ---------------------------------------------------------------------------
+
+
+
 
 def _parse_posted_date(date_str: str | None) -> str | None:
     """
@@ -139,14 +139,14 @@ def _parse_posted_date(date_str: str | None) -> str | None:
     if not date_str:
         return None
 
-    # Detail page format
+    
     try:
         parsed = datetime.strptime(date_str, "%Y-%m-%d %H:%M")
         return parsed.replace(tzinfo=IST).isoformat()
     except ValueError:
         pass
 
-    # Listing page fallback
+    
     text = date_str.replace("Posted on", "").strip()
     try:
         parsed = datetime.strptime(text, "%b %d, %Y")
@@ -159,7 +159,7 @@ def normalize_item(raw_item: dict, fetched_at: str, http_status: int) -> dict:
     speaker_raw = raw_item.get("speaker_raw")
     speakers = [speaker_raw] if speaker_raw else []
 
-    # Prefer richer published_at_raw from detail; fall back to listing date_raw
+    
     date_str = raw_item.get("published_at_raw") or raw_item.get("date_raw")
 
     return {
@@ -181,9 +181,9 @@ def normalize_item(raw_item: dict, fetched_at: str, http_status: int) -> dict:
     }
 
 
-# ---------------------------------------------------------------------------
-# Runner
-# ---------------------------------------------------------------------------
+
+
+
 
 def run(listing_url: str = TARGET_URL, max_detail: int = 5) -> list[dict]:
     """
@@ -229,9 +229,9 @@ def run(listing_url: str = TARGET_URL, max_detail: int = 5) -> list[dict]:
     return results
 
 
-# ---------------------------------------------------------------------------
-# Entry point
-# ---------------------------------------------------------------------------
+
+
+
 
 if __name__ == "__main__":
     import json
@@ -248,7 +248,7 @@ if __name__ == "__main__":
     fixtures_dir = here / "fixtures"
 
     if fixture_path.exists():
-        # Run against saved fixtures — no network needed
+        
         log.info("Running against saved fixture: %s", fixture_path)
         listing_html = fixture_path.read_text(encoding="utf-8")
         items = parse_items(listing_html, BASE_URL)
@@ -271,7 +271,7 @@ if __name__ == "__main__":
             normalized = normalize_item(merged, fetched_at=fetched_at, http_status=200)
             results.append(normalized)
     else:
-        # Live run
+        
         log.info("No fixture found — running live (max_detail=5)")
         results = run(max_detail=5)
 

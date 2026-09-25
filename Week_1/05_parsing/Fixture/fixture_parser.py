@@ -1,4 +1,4 @@
-from urllib.parse import urljoin
+utf-8from urllib.parse import urljoin
 from bs4 import BeautifulSoup
 
 

@@ -1,4 +1,4 @@
-import logging
+utf-8import logging
 import sqlite3
 import sys
 from datetime import datetime, timezone

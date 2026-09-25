@@ -1,4 +1,4 @@
-import requests
+utf-8import requests
 
 DEFAULT_USER_AGENT = (
     "SSRISS-WebMonitor/0.1 (educational scraping project; contact: saanvi@example.com)"

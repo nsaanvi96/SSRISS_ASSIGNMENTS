@@ -1,4 +1,4 @@
-import sys
+utf-8import sys
 import requests
 from requests.exceptions import RequestException
 

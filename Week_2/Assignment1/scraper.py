@@ -1,4 +1,4 @@
-import time
+utf-8import time
 from datetime import datetime, timezone, timedelta
 from urllib.parse import urljoin
 

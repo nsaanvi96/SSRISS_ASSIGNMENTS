@@ -1,4 +1,4 @@
-"""
+utf-8"""
 runner.py — generic source runner.
 
 A source config dict must have:
@@ -53,9 +53,9 @@ def run_source(source_config: dict, db_path: Path = DB_PATH) -> dict:
 
     logger.info("START source=%s", name)
 
-    # ── 1. Fetch listing ──────────────────────────────────────────────────────
-    # Use a custom fetcher if the source provides one (e.g. fixture/disk source),
-    # otherwise fall back to the standard network fetcher.
+    
+    
+    
     _fetcher = source_config.get("fetcher", fetch)
     try:
         html, http_status = _fetcher(listing_url)
@@ -68,7 +68,7 @@ def run_source(source_config: dict, db_path: Path = DB_PATH) -> dict:
 
     fetched_at = now_utc()
 
-    # ── 2. Parse listing ──────────────────────────────────────────────────────
+    
     try:
         raw_items = parser(html, base_url)
         if max_items is not None:
@@ -80,14 +80,14 @@ def run_source(source_config: dict, db_path: Path = DB_PATH) -> dict:
         _log_end(name, summary, t_start)
         return summary
 
-    # ── 3. Detail enrichment (optional) ──────────────────────────────────────
+    
     if detail_fn and merger:
         raw_items = _enrich_with_detail(
             raw_items, detail_fn, merger, name,
             max_detail=max_detail,
         )
 
-    # ── 4. Normalize ──────────────────────────────────────────────────────────
+    
     normalized = []
     for raw in raw_items:
         try:
@@ -108,7 +108,7 @@ def run_source(source_config: dict, db_path: Path = DB_PATH) -> dict:
 
     logger.info("NORMALIZE records=%d source=%s", len(normalized), name)
 
-    # ── 5. Store ──────────────────────────────────────────────────────────────
+    
     init_db(db_path)
     for item in normalized:
         try:
