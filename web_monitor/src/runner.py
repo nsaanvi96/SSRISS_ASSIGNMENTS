@@ -1,4 +1,4 @@
-utf-8"""
+"""
 runner.py — generic source runner.
 
 A source config dict must have:

@@ -1,4 +1,4 @@
-utf-8import logging
+import logging
 import sys
 from pathlib import Path
 

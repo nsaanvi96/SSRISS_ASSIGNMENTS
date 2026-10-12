@@ -1,14 +1,14 @@
-utf-8import sqlite3
+import sqlite3
 import sys
 from pathlib import Path
 from datetime import datetime, timezone
 
 import pytest
 
-sys.path.insert(0, str(Path(__file__).parent.parent / "scraper.py"))
-sys.path.insert(0, str(Path(__file__).parent.parent / "storage.py"))
+sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
+sys.path.insert(0, str(Path(__file__).parent.parent / "sources"))
 
-from scraper import parse_items, normalize_item
+from iiser_pune import parse_items, normalize_item
 from storage import init_db, upsert_item, get_item
 
 FIXTURES = Path(__file__).parent / "fixtures"
@@ -30,6 +30,7 @@ def make_normalized(raw_item):
 SCHEMA_KEYS = {
     "source_name", "source_url", "item_url", "item_type", "title",
     "event_start", "event_end", "location", "speakers", "organizations",
+    "description", "categories",
     "raw_text", "fetched_at", "http_status",
 }
 

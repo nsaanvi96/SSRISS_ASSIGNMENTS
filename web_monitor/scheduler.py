@@ -1,4 +1,4 @@
-utf-8"""
+"""
 assignments/08_scheduling/scheduler.py
 Assignment 8 — Scheduled Local Run
 

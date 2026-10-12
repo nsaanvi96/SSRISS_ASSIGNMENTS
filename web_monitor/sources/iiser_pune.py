@@ -1,4 +1,4 @@
-utf-8"""
+"""
 sources/iiser_pune.py — IISER Pune events source adapter.
 
 Exposes:

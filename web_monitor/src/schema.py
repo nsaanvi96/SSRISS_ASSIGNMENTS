@@ -1,4 +1,4 @@
-utf-8"""
+"""
 schema.py — shared output schema for all sources.
 
 Every source normalizer must return a dict that matches ITEM_SCHEMA.
