@@ -1,0 +1,128 @@
+[
+  {
+    "id": "event_01",
+    "title": "Decarbonization Pathways for Developing Economies",
+    "source_url": "https://www.iima.ac.in/the-institute/events/decarbonization-pathways",
+    "raw_text": "Speaker: Dr. Example, Centre for Example Studies\nOrganized by: Department of Example\nChair: Prof. Sample",
+    "description": "A seminar exploring policy transitions and clean energy financing."
+  },
+  {
+    "id": "event_02",
+    "title": "Annual Management Research Conference 2026",
+    "source_url": "https://www.iima.ac.in/the-institute/events/amrc-2026",
+    "raw_text": "Keynote Speaker: Prof. Arvind Sharma, Indian Institute of Management Ahmedabad\nOrganized by: Research and Publications Office\nCo-organized by: Centre for Management in Agriculture",
+    "description": "Flagship academic conference bringing together management scholars."
+  },
+  {
+    "id": "event_03",
+    "title": "FinTech and Regulatory Frontiers",
+    "source_url": "https://www.iima.ac.in/the-institute/events/fintech-frontiers",
+    "raw_text": "Chair: Prof. R. Ramanathan\nModerator: Ms. Priya Nair, The Economic Times\nPanelist: Dr. Anand Verma, Reserve Bank of India\nPanelist: Mr. S. Ramanathan, SEBI",
+    "description": "Roundtable on digital payment regulation and open banking."
+  },
+  {
+    "id": "event_04",
+    "title": "Public Policy Lecture on Fiscal Federalism",
+    "source_url": "https://www.iima.ac.in/the-institute/events/fiscal-federalism-2026",
+    "raw_text": "Speaker: Dr. Tanya Joseph, School of Social Sciences\nOrganized by: School of Public Policy and Governance",
+    "description": "Analysis of devolution formulas, revenue sharing, and regional inequality."
+  },
+  {
+    "id": "event_05",
+    "title": "Colloquium on Computational Economics",
+    "source_url": "https://www.iima.ac.in/the-institute/events/computational-economics",
+    "raw_text": "Speaker: Dr. Elena Rostova (Institute for Advanced Study, Princeton)\nHost: Department of Economics",
+    "description": "Algorithmic game theory and high-dimensional economic models."
+  },
+  {
+    "id": "event_06",
+    "title": "Supply Chain Resilience in South Asia",
+    "source_url": "https://www.iima.ac.in/the-institute/events/supply-chain-resilience",
+    "raw_text": "Speaker: Prof. Amit Sen - Centre for Policy Research\nChair: Prof. Sunita Deshmukh",
+    "description": "Freight corridors, port logistics, and multi-modal transit."
+  },
+  {
+    "id": "event_07",
+    "title": "Special Convocation Endowment Lecture",
+    "source_url": "https://www.iima.ac.in/the-institute/events/endowment-lecture-2026",
+    "raw_text": "Chief Guest: Smt. Nirmala Sitharaman\nWelcome Address: Prof. Errol D'Souza, Director, IIMA\nVote of Thanks: Prof. Saral Mukherjee",
+    "description": "Distinguished public address during the annual convocation week."
+  },
+  {
+    "id": "event_08",
+    "title": "Agricultural Credit and Smallholder Sustainability",
+    "source_url": "https://www.iima.ac.in/the-institute/events/agricultural-credit-2026",
+    "raw_text": "Speaker: Dr. K. Radhakrishnan, Centre for Management in Agriculture\nOrganized by: Centre for Management in Agriculture\nIn collaboration with: National Bank for Agriculture and Rural Development",
+    "description": "Empirical survey on crop insurance access and rural lending schemes."
+  },
+  {
+    "id": "event_09",
+    "title": "Panel on Artificial Intelligence and Labor Economics",
+    "source_url": "https://www.iima.ac.in/the-institute/events/ai-labor-economics",
+    "raw_text": "Speaker: Dr. Rajesh Kumar, IIT Delhi\nDiscussant: Prof. R. Kumar, Jawaharlal Nehru University\nChair: Prof. Rajesh Kumar, IIM Bangalore",
+    "description": "A panel where multiple researchers share similar or overlapping names."
+  },
+  {
+    "id": "event_10",
+    "title": "Global Macroeconomics Workshop",
+    "source_url": "https://www.iima.ac.in/the-institute/events/macro-workshop-2026",
+    "raw_text": "Speakers: Prof. Arvind Sharma, IIM Ahmedabad; Dr. Sunita Rao, IISc Bangalore; Mr. Kevin Vance\nOrganized by: Economics Area",
+    "description": "Joint presentations on interest rate differentials and trade balance."
+  },
+  {
+    "id": "event_11",
+    "title": "ESG and Sustainable Corporate Finance",
+    "source_url": "https://www.iima.ac.in/the-institute/events/esg-corporate-finance",
+    "raw_text": "Speaker: Dr. Robert Lang, Department of Economics, Harvard University\nSession Chair: Prof. Vikram Patel\nHosted by: Centre for ESG Research",
+    "description": "Measuring corporate emissions and green bond issuance benchmarks."
+  },
+  {
+    "id": "event_12",
+    "title": "Healthcare Systems and Telemedicine Delivery",
+    "source_url": "https://www.iima.ac.in/the-institute/events/healthcare-systems-2026",
+    "raw_text": "Presented by: Public Health Research Initiative\nSpeaker: Dr. Meera Nambiar (All India Institute of Medical Sciences)\nModerator: Dr. Hitesh Shah",
+    "description": "Evaluating remote primary health centers across rural districts."
+  },
+  {
+    "id": "event_13",
+    "title": "Digital Transformation in Public Distribution Systems",
+    "source_url": "https://www.iima.ac.in/the-institute/events/pds-digital-transformation",
+    "raw_text": "Speaker: Shri Sanjay Kirloskar\nCo-chair: Dr. M. K. Patel\nChair: Dr. M. K. Patel Jr., Gujarat Technological University\nOrganized by: Centre for Digital Transformation",
+    "description": "Biometric verification and grain inventory optimization in state depots."
+  },
+  {
+    "id": "event_14",
+    "title": "PhD Proposal Defense in Marketing",
+    "source_url": "https://www.iima.ac.in/the-institute/events/phd-defense-marketing",
+    "raw_text": "Presenter: Ms. Ananya Gupta\nAdvisor: Prof. K. V. Subramanian, Marketing Area\nCo-advisor: Prof. Devendra Singh",
+    "description": "Dissertation proposal examining consumer nudge dynamics in digital retail."
+  },
+  {
+    "id": "event_15",
+    "title": "Campus Tree Planting Drive and Environmental Walk",
+    "source_url": "https://www.iima.ac.in/the-institute/events/campus-green-drive",
+    "raw_text": "Date: October 25, 2026\nVenue: Old Campus Quadrangle\nAll students and faculty are invited to join the morning walk.",
+    "description": "An informal community event with no formal guest speakers or chairs."
+  },
+  {
+    "id": "event_16",
+    "title": "Workshop on Behavioral Game Theory",
+    "source_url": "https://www.iima.ac.in/the-institute/events/behavioral-game-theory",
+    "raw_text": "Instructor: Prof. Maya Sen, Department of Political Science, University of Rochester\nCoordinator: Prof. Amit Sharma\nOrganized by: Ravi J. Matthai Centre for Educational Innovation",
+    "description": "Laboratory experiments on coordination games and public good provision."
+  },
+  {
+    "id": "event_17",
+    "title": "Symposium on Constitutional Law and Democratic Institutions",
+    "source_url": "https://www.iima.ac.in/the-institute/events/constitutional-law-symposium",
+    "raw_text": "Keynote Speaker: Justice (Retd.) S. Muralidhar\nChair: Prof. Upendra Baxi, Emeritus Professor\nOrganized by: Legal Studies Group\nCo-organized by: Institute Human Rights Committee",
+    "description": "Discussion on institutional autonomy and constitutional review."
+  },
+  {
+    "id": "event_18",
+    "title": "Women in Tech and Venture Capital Roundtable",
+    "source_url": "https://www.iima.ac.in/the-institute/events/women-in-tech-2026",
+    "raw_text": "Speaker: Ms. Kiran Mazumdar-Shaw, Biocon Limited\nModerator: Prof. Sneha Roy, Innovation and Entrepreneurship Cell\nOrganized by: CIIE.CO",
+    "description": "Fireside chat discussing female entrepreneurship and seed venture financing."
+  }
+]
