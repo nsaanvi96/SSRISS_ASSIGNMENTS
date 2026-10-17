@@ -1,0 +1,146 @@
+[
+  {
+    "id": "pair_p01",
+    "entity_type": "person",
+    "entity_a": "Prof. Ananya Rao",
+    "entity_b": "Ananya Rao",
+    "expected_decision": "safe automatic match",
+    "rationale": "Identical normalized full name ('ananya rao') after stripping common academic honorific ('Prof.'). No risk of person collision."
+  },
+  {
+    "id": "pair_p02",
+    "entity_type": "person",
+    "entity_a": "Prof. Ananya Rao",
+    "entity_b": "Prof Ananya Rao",
+    "expected_decision": "safe automatic match",
+    "rationale": "Punctuation-only variance (dot after 'Prof'). The underlying token stream and full name are identical."
+  },
+  {
+    "id": "pair_p03",
+    "entity_type": "person",
+    "entity_a": "Ananya Rao",
+    "entity_b": "Prof Ananya Rao",
+    "expected_decision": "safe automatic match",
+    "rationale": "Honorific removal yields identical full name string ('ananya rao')."
+  },
+  {
+    "id": "pair_p04",
+    "entity_type": "person",
+    "entity_a": "Prof. Ananya Rao",
+    "entity_b": "A. Rao",
+    "expected_decision": "possible match requiring review",
+    "rationale": "Initial-only first name ('A.'). Could be Amit Rao, Arvind Rao, or Ananya Rao. Merging automatically creates high false-merge risk; flag for review with context."
+  },
+  {
+    "id": "pair_p05",
+    "entity_type": "person",
+    "entity_a": "Ananya Rao",
+    "entity_b": "A. Rao",
+    "expected_decision": "possible match requiring review",
+    "rationale": "Same as above; initial 'A.' matches first letter of 'Ananya' and surname matches, but lacks conclusive full-name identity."
+  },
+  {
+    "id": "pair_p06",
+    "entity_type": "person",
+    "entity_a": "Prof. Ananya Rao",
+    "entity_b": "Ananya R.",
+    "expected_decision": "possible match requiring review",
+    "rationale": "Initial-only surname ('R.'). Could be Ananya Roy, Ananya Reddy, or Ananya Rao. Requires institutional context or affiliation before merging."
+  },
+  {
+    "id": "pair_p07",
+    "entity_type": "person",
+    "entity_a": "Ananya Rao",
+    "entity_b": "Ananya R.",
+    "expected_decision": "possible match requiring review",
+    "rationale": "First name matches, but surname is truncated to initial. Cannot safely auto-merge without external verification."
+  },
+  {
+    "id": "pair_p08",
+    "entity_type": "person",
+    "entity_a": "A. Rao",
+    "entity_b": "Ananya R.",
+    "expected_decision": "do not match automatically",
+    "rationale": "Both tokens are partially truncated (initial + surname vs first name + initial). The mutual information is too weak to suggest even a candidate match."
+  },
+  {
+    "id": "pair_p09",
+    "entity_type": "person",
+    "entity_a": "Dr. Rajesh Kumar",
+    "entity_b": "Prof. R. Kumar",
+    "expected_decision": "possible match requiring review",
+    "rationale": "First initial match with common surname 'Kumar'. High probability of distinct individuals (e.g. Ramesh Kumar, Rakesh Kumar). Needs human review."
+  },
+  {
+    "id": "pair_p10",
+    "entity_type": "person",
+    "entity_a": "Ananya Rao",
+    "entity_b": "Ananya Sharma",
+    "expected_decision": "do not match automatically",
+    "rationale": "Different surnames. Clearly distinct individuals."
+  },
+  {
+    "id": "pair_o01",
+    "entity_type": "organization",
+    "entity_a": "Centre for Policy Research",
+    "entity_b": "Center for Policy Research",
+    "expected_decision": "safe automatic match",
+    "rationale": "Standard British vs American English spelling variation ('Centre' vs 'Center'). Semantically and lexically identical entity."
+  },
+  {
+    "id": "pair_o02",
+    "entity_type": "organization",
+    "entity_a": "Centre for Policy Research",
+    "entity_b": "Centre for Policy Research (CPR)",
+    "expected_decision": "safe automatic match",
+    "rationale": "Parenthetical acronym extension. Stripping the parenthetical acronym '(CPR)' leaves the exact canonical organization name."
+  },
+  {
+    "id": "pair_o03",
+    "entity_type": "organization",
+    "entity_a": "Centre for Policy Research",
+    "entity_b": "CPR",
+    "expected_decision": "possible match requiring review",
+    "rationale": "Acronym alone is highly ambiguous (CPR could refer to Cardiopulmonary Resuscitation, Coalition for Peace and Reconciliation, or Centre for Policy Research). Requires context."
+  },
+  {
+    "id": "pair_o04",
+    "entity_type": "organization",
+    "entity_a": "Center for Policy Research",
+    "entity_b": "CPR",
+    "expected_decision": "possible match requiring review",
+    "rationale": "Standalone acronym matching against American spelling variant. Same ambiguity as pair_o03; flag for human review."
+  },
+  {
+    "id": "pair_o05",
+    "entity_type": "organization",
+    "entity_a": "Indian Institute of Management Ahmedabad",
+    "entity_b": "IIM Ahmedabad",
+    "expected_decision": "safe automatic match",
+    "rationale": "Standard institutional abbreviation ('Indian Institute of Management' -> 'IIM') with identical geographic qualifier 'Ahmedabad'."
+  },
+  {
+    "id": "pair_o06",
+    "entity_type": "organization",
+    "entity_a": "Indian Institute of Management Ahmedabad",
+    "entity_b": "IIMA",
+    "expected_decision": "possible match requiring review",
+    "rationale": "Single acronym token 'IIMA'. While commonly used in local context, standalone 4-letter acronyms should be validated by domain/source context before merging."
+  },
+  {
+    "id": "pair_o07",
+    "entity_type": "organization",
+    "entity_a": "Centre for Management in Agriculture",
+    "entity_b": "Centre for ESG Research",
+    "expected_decision": "do not match automatically",
+    "rationale": "Completely distinct research centers under the same parent institution. Must never be merged."
+  },
+  {
+    "id": "pair_o08",
+    "entity_type": "organization",
+    "entity_a": "School of Public Policy",
+    "entity_b": "School of Public Health",
+    "expected_decision": "do not match automatically",
+    "rationale": "High token overlap ('School of Public...'), but distinct disciplines ('Policy' != 'Health'). Must never be merged."
+  }
+]
