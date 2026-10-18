@@ -1,0 +1,182 @@
+[
+  {
+    "id": "item_01",
+    "discovered_url": "https://www.iima.ac.in/the-institute/events/amrc-2026",
+    "discovered_title": "Annual Management Research Conference 2026",
+    "category": "Events",
+    "section": "events",
+    "mime_type": "text/html",
+    "source_name": "iima",
+    "expected_type": "event"
+  },
+  {
+    "id": "item_02",
+    "discovered_url": "https://www.iima.ac.in/seminar/decarbonization-pathways",
+    "discovered_title": "Decarbonization Pathways in Developing Economies",
+    "category": "Seminar",
+    "section": "academic_seminars",
+    "mime_type": "text/html",
+    "source_name": "iima",
+    "expected_type": "event"
+  },
+  {
+    "id": "item_03",
+    "discovered_url": "https://www.iima.ac.in/the-institute/events/pgpx-webinar-admissions",
+    "discovered_title": "PGPX Admissions Information Session & Live Webinar",
+    "category": "Webinar",
+    "section": "events",
+    "mime_type": "text/html",
+    "source_name": "iima",
+    "expected_type": "event"
+  },
+  {
+    "id": "item_04",
+    "discovered_url": "https://www.iima.ac.in/news/iima-appoints-new-chair-professor-esg",
+    "discovered_title": "IIMA Appoints New Chair Professor in ESG Research",
+    "category": "News",
+    "section": "press_room",
+    "mime_type": "text/html",
+    "source_name": "iima",
+    "expected_type": "announcement"
+  },
+  {
+    "id": "item_05",
+    "discovered_url": "https://www.iima.ac.in/announcements/tender-campus-solar-power-2026",
+    "discovered_title": "Notice Inviting Tenders for Campus Solar Power Grid",
+    "category": "Notice",
+    "section": "procurement",
+    "mime_type": "text/html",
+    "source_name": "iima",
+    "expected_type": "announcement"
+  },
+  {
+    "id": "item_06",
+    "discovered_url": "https://www.iima.ac.in/press-release/61st-convocation-chief-guest",
+    "discovered_title": "Press Release: Chief Guest for the 61st Convocation",
+    "category": "Press Release",
+    "section": "press_room",
+    "mime_type": "text/html",
+    "source_name": "iima",
+    "expected_type": "announcement"
+  },
+  {
+    "id": "item_07",
+    "discovered_url": "https://www.iima.ac.in/faculty-research/faculty/arvind-sharma",
+    "discovered_title": "Prof. Arvind Sharma - Faculty Directory",
+    "category": "Faculty Directory",
+    "section": "faculty_profiles",
+    "mime_type": "text/html",
+    "source_name": "iima",
+    "expected_type": "faculty"
+  },
+  {
+    "id": "item_08",
+    "discovered_url": "https://www.iima.ac.in/people/faculty/saral-mukherjee",
+    "discovered_title": "Faculty Profile: Prof. Saral Mukherjee",
+    "category": null,
+    "section": "people",
+    "mime_type": "text/html",
+    "source_name": "iima",
+    "expected_type": "faculty"
+  },
+  {
+    "id": "item_09",
+    "discovered_url": "https://www.iima.ac.in/sites/default/files/amrc-2026-agenda.pdf",
+    "discovered_title": "AMRC 2026 Conference Agenda and Paper Sessions",
+    "category": null,
+    "section": "downloads",
+    "mime_type": "application/pdf",
+    "source_name": "iima",
+    "expected_type": "pdf_document"
+  },
+  {
+    "id": "item_10",
+    "discovered_url": "https://www.iima.ac.in/documents/annual-report-2025-26.pdf",
+    "discovered_title": "IIMA Annual Report 2025-26",
+    "category": "Report",
+    "section": "publications",
+    "mime_type": null,
+    "source_name": "iima",
+    "expected_type": "pdf_document"
+  },
+  {
+    "id": "item_11",
+    "discovered_url": "https://www.iima.ac.in/research/download-whitepaper?paper_id=451",
+    "discovered_title": "Whitepaper on Algorithmic Carbon Markets (PDF)",
+    "category": null,
+    "section": "research",
+    "mime_type": "application/pdf",
+    "source_name": "iima",
+    "expected_type": "pdf_document"
+  },
+  {
+    "id": "item_12",
+    "discovered_url": "https://forms.gle/xK9z8Q2nB1yPq5",
+    "discovered_title": "Register for FinTech Frontiers Roundtable",
+    "category": "Registration",
+    "section": "events",
+    "mime_type": "text/html",
+    "source_name": "iima",
+    "expected_type": "external_link"
+  },
+  {
+    "id": "item_13",
+    "discovered_url": "https://www.eventbrite.com/e/iima-alumni-homecoming-retreat-tickets-987654",
+    "discovered_title": "Eventbrite RSVP: IIMA Alumni Homecoming Retreat",
+    "category": null,
+    "section": "external_rsvp",
+    "mime_type": "text/html",
+    "source_name": "iima",
+    "expected_type": "external_link"
+  },
+  {
+    "id": "item_14",
+    "discovered_url": "https://zoom.us/j/98712345678",
+    "discovered_title": "Join Zoom Webinar Directly",
+    "category": "Webinar Link",
+    "section": "online_events",
+    "mime_type": "text/html",
+    "source_name": "iima",
+    "expected_type": "external_link"
+  },
+  {
+    "id": "item_15",
+    "discovered_url": "https://www.iima.ac.in/campus-life/photo-gallery-autumn-2026",
+    "discovered_title": "Campus Life in Autumn - Photo Collection",
+    "category": "Gallery",
+    "section": "campus_life",
+    "mime_type": "text/html",
+    "source_name": "iima",
+    "expected_type": "unknown"
+  },
+  {
+    "id": "item_16",
+    "discovered_url": "https://www.iima.ac.in/search?q=management+education",
+    "discovered_title": "Search Query: Management Education",
+    "category": null,
+    "section": "search",
+    "mime_type": "text/html",
+    "source_name": "iima",
+    "expected_type": "unknown"
+  },
+  {
+    "id": "item_17",
+    "discovered_url": "https://www.iima.ac.in/research/working-papers/wp-2026-08",
+    "discovered_title": "Working Paper No. 2026-08: Monetary Transmission in India",
+    "category": "Working Paper",
+    "section": "research_papers",
+    "mime_type": "text/html",
+    "source_name": "iima",
+    "expected_type": "unknown"
+  },
+  {
+    "id": "item_18",
+    "discovered_url": "https://www.iima.ac.in/about/virtual-campus-tour",
+    "discovered_title": "Heritage Campus Virtual 360 Tour",
+    "category": null,
+    "section": "about",
+    "mime_type": "text/html",
+    "source_name": "iima",
+    "expected_type": "unknown"
+  }
+]

@@ -1,0 +1,76 @@
+
+==================================================
+RUN SUMMARY: 2026-10-18T14:39:01.619330+00:00
+==================================================
+SOURCE: iima_events
+PAGES_FETCHED: 1
+ITEMS_DISCOVERED: 16
+ITEMS_PARSED: 16
+NEW: 16
+CHANGED: 0
+UNCHANGED: 0
+FAILED: 0
+PEOPLE_EXTRACTED: 17
+ORGANIZATIONS_EXTRACTED: 0
+PCT_WITH_DATE: 100.0%
+PCT_WITH_SPEAKER: 100.0%
+PCT_WITH_ORGANIZATION: 0.0%
+STATUS: HEALTHY: New or changed content collected
+DIAGNOSIS: Healthy: Processed 16 new and 0 updated items.
+
+==================================================
+RUN SUMMARY: 2026-10-18T14:39:01.666366+00:00
+==================================================
+SOURCE: iima_events
+PAGES_FETCHED: 1
+ITEMS_DISCOVERED: 16
+ITEMS_PARSED: 16
+NEW: 0
+CHANGED: 0
+UNCHANGED: 16
+FAILED: 0
+PEOPLE_EXTRACTED: 17
+ORGANIZATIONS_EXTRACTED: 0
+PCT_WITH_DATE: 100.0%
+PCT_WITH_SPEAKER: 100.0%
+PCT_WITH_ORGANIZATION: 0.0%
+STATUS: HEALTHY: Source had no new content (all unchanged)
+DIAGNOSIS: Healthy: Source active (16 items visible); no new or updated items since previous run.
+
+==================================================
+RUN SUMMARY: 2026-10-18T14:40:18.983401+00:00
+==================================================
+SOURCE: iima_events
+PAGES_FETCHED: 1
+ITEMS_DISCOVERED: 16
+ITEMS_PARSED: 16
+NEW: 16
+CHANGED: 0
+UNCHANGED: 0
+FAILED: 0
+PEOPLE_EXTRACTED: 22
+ORGANIZATIONS_EXTRACTED: 13
+PCT_WITH_DATE: 100.0%
+PCT_WITH_SPEAKER: 100.0%
+PCT_WITH_ORGANIZATION: 81.2%
+STATUS: HEALTHY: New or changed content collected
+DIAGNOSIS: Healthy: Processed 16 new and 0 updated items.
+
+==================================================
+RUN SUMMARY: 2026-10-18T14:40:19.003556+00:00
+==================================================
+SOURCE: iima_events
+PAGES_FETCHED: 1
+ITEMS_DISCOVERED: 16
+ITEMS_PARSED: 16
+NEW: 0
+CHANGED: 0
+UNCHANGED: 16
+FAILED: 0
+PEOPLE_EXTRACTED: 22
+ORGANIZATIONS_EXTRACTED: 13
+PCT_WITH_DATE: 100.0%
+PCT_WITH_SPEAKER: 100.0%
+PCT_WITH_ORGANIZATION: 81.2%
+STATUS: HEALTHY: Source had no new content (all unchanged)
+DIAGNOSIS: Healthy: Source active (16 items visible); no new or updated items since previous run.
